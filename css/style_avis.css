@@ -1,0 +1,86 @@
+
+.sec-avis{
+    padding-top:72.5px;
+    height:100vh;
+}
+.avis-content{
+    width:100%;
+    height:100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.avis-img{
+    width:25%;
+    height:100%;
+    background-image: url('https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+.cont{
+    width:50%;
+    background-color: #292929;
+}
+
+.avis{
+    
+
+    background-color: #292929;
+    padding: 55px;
+    color: #fff;
+    display: flex;
+}
+.quote{
+    margin-right: 10px;
+    height: fit-content;
+
+}
+.quotesvg{
+    width:20px;
+}
+
+.quote svg{
+    width:100%;
+    height:auto;
+}
+
+.user div{
+    display:flex;
+    align-items:center;
+    
+}
+
+.user div h2{
+    font-size: 20px;
+}
+
+.avis-date{
+    font-size: 12px;
+    position: relative;
+    top: -4px;
+    text-transform: uppercase;
+    
+    margin-bottom: 5px;
+
+}
+
+.user-text{
+    color:#b2b2b2;
+    font-size: 16px;
+    line-height: 1.6rem;
+    border-left: 1px dotted red;
+    padding:5px;
+}
+
+
+
+.block-com{
+    display:flex;
+
+}
+
+.bordure{
+    height:auto;
+    
+}

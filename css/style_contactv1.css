@@ -1,0 +1,137 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.contact{
+    display: flex;
+    
+}
+
+
+.contact_gauche{
+    width:50%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contact_droite{
+    width:50%;
+    height:100vh; 
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact_droite p {
+    font-family: 'Rochester', cursive;
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.contact_item{
+    width:60%;
+    border: 1px solid #eee;
+}
+.contact_item svg{
+    fill:#146bc1;
+}
+.contact_item h1{
+    padding-top: 5px;
+    padding-bottom: 13px;
+    text-align: center;
+    font-weight: 100;
+}
+.contact_item ul{
+    list-style:none;
+    padding:0;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.contact_item .formulaire{
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.formulaire select, .formulaire input {
+    color: #757575;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.formulaire textarea{
+    color: #757575;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #eee;
+    height: 105px;
+}
+.ligne{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-envoie{
+    background-color: #146bc1!important;
+    color: white!important;
+    padding: 10px 0!important;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px !important;
+    margin-top: 0 !important;
+
+}
+@media screen and (max-width: 1104px){
+    .contact{
+        flex-direction: column-reverse;
+
+    }
+    .contact_gauche{
+        width:100%;
+        height: fit-content;
+        align-items: flex-start;
+        
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .contact_gauche h1{
+        font-size: 30px;
+
+    }
+
+    .contact_item{
+        width:90%;
+    }
+
+    .contact_droite{
+        width:100%;
+        height: 40vh;
+    }
+
+
+
+
+}
+
+button:checked ~ .formulaire{
+    background-color: purple;
+}

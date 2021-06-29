@@ -1,0 +1,150 @@
+.trait{
+	background-color: #FFD700;
+    height: 2px;
+    border: 0px;
+    margin-bottom: 25px;
+}
+
+.logo_food{
+	width: 50px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.effetimg img{
+	width: 280px;
+	/*transition: 0.5s;
+	margin: 20px;*/
+}
+
+.effetimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.effetimg > div {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+
+.nomIngredient {
+    color: white;
+    position: absolute;
+    top: 235px;
+    left: 20px;
+    font-size: 24px;
+}
+
+
+
+.description {
+    width: 240px;
+    height: 120px;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    right: -243px;
+    color: white;
+    transition: right 0.5s;
+}
+
+.effetimg > div img{
+	transition: filter 0.5s;
+}
+
+.effetimg > div:hover img{
+	filter:brightness(45%);
+}
+
+.effetimg > div:hover .description {
+	right: 20px;
+}
+
+.descriptionIngredient {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.prix {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.imgflag{
+	height: 50px;
+}
+
+.logo_flag{
+    text-align: center;
+}
+
+.logo_flag > img{
+	width: 3%;
+}
+
+@media screen and (min-width: 992px){
+    .ContainerHeader img{
+        width: 100%;
+    }
+
+    .ContainerHeader{
+        padding-top: 78px;
+        margin-bottom: 40px;
+    }
+
+    .ContainerHeader .text {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 991px){
+    .ContainerHeader img{
+        width: 100%;
+    }
+
+    .ContainerHeader{
+        padding-top: 73px;
+        margin-bottom: 40px;
+    }
+
+    .ContainerHeader .text {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 799px){
+    .ContainerHeader img{
+            width: 100%;
+        }
+
+        .ContainerHeader{
+            padding-top: 73px;
+            margin-bottom: 40px;
+        }
+
+        .ContainerHeader .text {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            top: 80px;
+            color: white;
+            font-size: 12px;
+        }
+}

@@ -1,0 +1,554 @@
+body,html{
+    scroll-behavior: smooth;
+}
+
+/*slider-----------------------------------------------------------*/
+#ctrl-img1,#ctrl-img2,#ctrl-img3{
+    display: none;
+}
+.slider{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    
+    
+}
+.slide{
+    width:300%;
+    height:100%;
+
+    display:flex;
+    animation-name: auto-slide;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    
+}
+input{
+    
+}
+/*
+@keyframes auto-slide{
+    0% { transform: translateX(-0%);}
+    31% { transform: translateX(-0%);}
+    33.33% { transform: translateX(-33.33%);}
+    64.33% { transform: translateX(-33.33%);}
+    66.66% { transform: translateX(-66.66%);}
+    97.66% { transform: translateX(-66.66%);}
+}
+*/
+.slide-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:33.3333333%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.slide-img label{
+    width:32px;
+    cursor:pointer;
+}
+.slide-img label svg{
+    width:100%;
+    height:auto;
+    fill:#7f8a97;
+}
+.slide-img label svg:hover{
+    fill:white;
+    transition:.3s;
+}
+.chevron-next{
+    margin-right: 66px;
+    height:100%;
+    display: flex;
+}
+
+.chevron-before{
+    margin-left: 66px;
+    height:100%;
+    display: flex;
+}
+
+.ctrl-bas{
+    align-self: center;
+  
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.ctrl-bas h2{
+    font-size: 50px ;
+    font-family: 'Rochester', cursive;
+    color:white;
+}
+.ctrl-bas div{
+    text-align: center;
+}
+.ctrl-bas p{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    max-width:600px;
+}
+.slide-btn{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff91;
+    border:2px solid #ffffff91;
+    padding:5px 10px;
+    
+}
+.ctrl-bas-rond{
+    position: absolute;
+    bottom: 10px
+}
+.slide-btn:hover{
+    color:white;
+    border-color: white;
+    transition:.5s;
+}
+.img1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488992783499-418eb1f62d08?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1453&q=80')center/cover;
+
+}
+
+.img2{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://media3.woopic.com/api/v1/images/93%2Fwebedia-musique-news%2Ffeb%2Fc6e%2F30034c14716e35bfaa36b63ed1%2Feros-ramazzotti-annonce-son-retour-avec-un-nouvel-album%7C381944-eros-ramazzotti-orig-1.jpg?facedetect=1&quality=85')center/cover;
+}
+
+.img3{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1577169995124-d7be4d4d9df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')center/cover;
+}
+
+
+
+
+.slide-itm label{
+    cursor: pointer;
+}
+
+#ctrl-img1:checked ~ .slide{
+    transform: translateX(0%);
+    transition: 0.7s;
+}
+
+#ctrl-img1:checked ~ .slide .img1 .ctrl-bas-rond .active{
+    background-color: white;
+}
+
+#ctrl-img2:checked ~ .slide{
+    transform: translateX(-33.33%);
+    transition: 0.7s;
+}
+#ctrl-img2:checked ~ .slide .img2 .ctrl-bas-rond .active {
+    background-color: #fff;
+    
+    
+}
+
+#ctrl-img3:checked ~ .slide{
+    transform: translateX(-66.66%);
+    transition: 0.7s;
+}
+#ctrl-img3:checked ~ .slide .img3 .ctrl-bas-rond .active {
+    background-color: #fff;
+}
+
+
+.slide-text{
+    position: absolute;
+    left:50%;
+    width:fit-content;
+}
+
+.ctrl-bas label{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #7f8a97;
+    margin: 0 3px;
+    
+}
+
+
+.ctrl-bas-rond label{
+    display: inline-block;
+}
+
+
+/*FIN slider------------------------------------------------------*/
+
+
+
+/* presentation */
+
+
+
+.contenu{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gauche{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gauche div{
+    max-width:70%;
+}
+.gauche div p {
+    margin-bottom: 21px;
+    color: #747474;
+    
+}
+.gauche div h1{
+    
+    font-size: 45px;
+    line-height: 1.65;
+    font-weight:200;
+    margin-bottom: 10px;
+}
+.droite{
+    width: 50%;
+    height: 100%;
+   
+}
+.imga{
+    background-size: cover;
+    background: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=714&q=80') center/cover;
+}
+
+.imgb{
+    background-size: cover;
+    background: url('https://images.unsplash.com/photo-1563953516741-21607fe33c1a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80')center/cover;
+
+}
+.imgc{
+    background-size: cover;
+    background: url('https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80') center/cover;
+}
+/*AVIS*/
+
+.avis{
+    width: 100%;
+    height: 100vh;
+    background : url('../img/bg2.jpg') center/cover no-repeat;
+    display:flex;
+    flex-direction : column;
+    align-items : center;
+    
+}
+.avis > h2{
+    text-align: center;
+    color : white;
+    font-size:30px;
+    position : absolute;
+    margin-top: 25px;
+}
+.avis-itm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+}
+.avis-ctrl{
+    width: 32px;
+}
+.avis-ctrl svg{
+    width: 100%;
+    height: auto;
+    fill : white;
+    cursor: pointer;
+}
+.avis-content{
+    width: 70vh;
+    
+    background-color: #fff;
+    overflow:hidden;
+    
+}
+
+.avis-slide{
+    width:300%;
+    height: 100%;
+    display: flex;
+
+}
+
+.avis-box{
+    width:33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content: center;
+}
+.box-ctn{
+    width: 80%;
+    height: 80%;
+    margin: 29px 0;
+}
+.user-message{
+    min-height: 144px;
+}
+
+.user-name{
+    border-bottom: 3px solid black;
+    margin-bottom: 40px !important;
+    
+}
+.user-name h3{
+    font-size: 30px;
+}
+.ligne-box{
+    margin:20px 0;
+}
+
+.avis-ctrl{
+    display:flex;
+
+    
+}
+.box-ctrl{
+    display:flex;
+    justify-content: space-between
+}
+
+.avis-ctrl2 label{
+    width: 25px;
+    
+    display:inline-block;
+    
+    margin: 0 3px;
+    cursor: pointer;    
+}
+.avis-ctrl2 label svg:hover{
+    fill:#146bc1 ;
+    transition:.5s
+}
+.avis-ctrl2 label svg{
+    width:100%;
+    height: auto;
+}
+.add-avis{
+    background-color: #146bc1;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.avis-active{
+   
+}
+
+#avis1:checked ~ .avis-slide{
+    transform: translateX(0);
+    transition:.5s
+}
+#avis2:checked ~ .avis-slide{
+    transform: translateX(-33.33%);
+    transition:.5s
+}
+#avis3:checked ~ .avis-slide{
+    transform: translateX(-66.66%);
+    transition:.5s
+}
+
+
+.cont-add-avis{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display:none;
+    
+    
+}
+.form-add-avis{
+    width: 44%;
+    padding: 20px;
+    background-color:white;
+}
+#open-add-avis:checked ~ .cont-add-avis{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.ctrl-add{
+    display: flex;
+    justify-content:space-between;
+}
+.ctrl-add h2{
+    padding-left: 17px;
+}
+.ctrl-add label svg{
+    width:100%;
+    height: auto;
+}
+.ctrl-add label{
+    width: 30px;
+    display:inline-block;
+    margin: 0 3px;
+    cursor: pointer;  
+
+}
+.avis-ligne{
+    display: flex;
+    
+}
+
+.form-add-avis form input{
+
+    color: #757575;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.form-add-avis form textarea{
+    color: #757575;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #eee;
+    height: 105px;
+}
+.envoie-avis{
+    background-color: #146bc1!important;
+    color: white!important;
+    padding: 10px 0!important;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px !important;
+    margin-top: 0 !important;
+}
+
+
+
+
+
+
+.news{
+    width: 100%;
+    height: fit-content;
+    padding: 35px 0;
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.souscrit{
+    display:flex;
+
+}
+.news input{
+    border-right: 0px;
+    padding:8px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    outline:none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.news button {
+    padding:8px;
+    border-left:0px;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-left: solid 2px;
+    color: white;
+    background-color:#212529;
+}
+
+.carte{ 
+    width: 100%;
+    height: 40vh;
+}
+.map{
+    width:100% ;
+    height:100%;
+}
+
+@media screen and (max-width: 991px){
+    .img2{
+        background-position-x: -457px;
+       }
+       /*section*/
+       
+       .contenu{
+        flex-direction:column-reverse;
+        height: 100vh;
+    }
+    .imgb{
+        background-position-y: -178px;
+    }
+
+    .sec_2 .contenu{
+        flex-direction:column;
+        margin-top: 21px;
+    }
+
+    .contenu .droite{
+        width:100%;
+    }
+    .gauche{
+        width:100%;
+    }
+
+
+    /*avis*/
+    .form-add-avis{
+        width:90%;
+    }
+
+
+
+
+    .slide-btn{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:707px){
+    .img2{
+        background-position-x: -754px;
+    }
+    
+}
+@media screen and (max-width:618px){
+    .imgb{
+        background-position-y: 0px;
+    }
+}
+@media screen and (max-width:425px){
+    .avis-ligne{
+        flex-direction:column;
+        padding-right: 25px;
+    }
+    .img2{
+        background-position-x: -913px;
+    }
+    
+}

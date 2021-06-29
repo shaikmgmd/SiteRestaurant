@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.reservation{
+    width:100%;
+    height:100vh;
+    display:flex;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images5.alphacoders.com/444/thumb-1920-444393.jpg');
+    background-size: cover;
+    align-items:center;
+    justify-content:center;
+    
+}
+.reserv-content{
+
+    background-color: #fff;
+    display: flex;
+}
+.ctn{
+    width:520px;
+    height:430px;
+}
+.reserv-img{
+
+    
+    background: url(https://images6.alphacoders.com/913/913663.jpg) center/cover;
+}
+.form-haut{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    
+}
+.form-haut div img{
+    width:100%;
+    height: auto;
+}
+.form-haut div{
+    width:50px;
+}
+
+.reserv-form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center
+}
+.ligne{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+ .form-cont select, .form-cont input {
+    color: #757575;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.reserv-envoie{
+    
+    background-color: #146bc1!important;
+    color: white!important;
+    padding: 12px 0!important;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1074px){
+    .form-cont{
+        width:100%;
+    }
+    .reserv-content{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .ctn{
+        width: 100%;
+        height: 50%;
+    }
+    .ligne{
+        width: 90%;
+    }
+}
